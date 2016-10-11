@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://tukaiz-products.pixalized.com/" />
+<title>LoadTest6_StubOut_Prod</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">LoadTest6_StubOut_Prod</td></tr>
+</thead><tbody>
+<!--Review all comments first-->
+<!--Go to Home-->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Login / Register</td>
+	<td></td>
+</tr>
+<!--Go to Login-->
+<tr>
+	<td>open</td>
+	<td>/sign-in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>qatukaiz+tkz@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>qatukaiz+tkz@gmail.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<!--Go to Home, user now logged in-->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>20000ms</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Shop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=About Us / Contact Us</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.fa.fa-shopping-cart</td>
+	<td></td>
+</tr>
+<!--Test Name Game feature-->
+<!--(watch for preview update)-->
+<tr>
+	<td>select</td>
+	<td>id=preview_set_id</td>
+	<td>label=Chicago Set 2</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=preview_set_name_eltrain_fl_wall_web</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=preview_set_name_eltrain_fl_wall_web</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=preview_text</td>
+	<td>cy</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=preview_set_name_eltrain_fl_wall_web</td>
+	<td></td>
+</tr>
+<!--Go to content pages-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Send a Smile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=About Us / Contact Us</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Help / FAQ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Privacy Policy</td>
+	<td></td>
+</tr>
+<!--UPDATE 10-2016, no longer fails (original comment - Bug, wll fail)-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Terms and Conditions</td>
+	<td></td>
+</tr>
+<!--Go to Simple Product-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Poster - 24&quot; x 36&quot;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>20000ms</td>
+</tr>
+<!--(watch image selection)-->
+<tr>
+	<td>type</td>
+	<td>id=customization_FirstName</td>
+	<td>reg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_LastName</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=customization_quantity</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_quantity</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_to_cart</td>
+	<td></td>
+</tr>
+<!--Cont Shopping btn-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Continue Shopping</td>
+	<td></td>
+</tr>
+<!--Go to Calendar Product-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Wall Calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=set_selector</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=ul.set</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.customization_header &gt; p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=set_selector</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>20000ms</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_FirstName</td>
+	<td>Load</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_LastName</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>5000ms</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=customization_quantity</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_quantity</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_to_cart</td>
+	<td></td>
+</tr>
+<!--Go to Cart btn-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Proceed to Shopping Cart</td>
+	<td></td>
+</tr>
+<!--Go to Cart-->
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Review</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=cart_item_quantity</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.fa.fa-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Select All</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Remove Selected</td>
+	<td></td>
+</tr>
+<!--Review Customizaton-->
+<!--(watch for review image)-->
+<tr>
+	<td>click</td>
+	<td>link=Review</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.reveal-modal-bg</td>
+	<td></td>
+</tr>
+<!--not going to add img since the # will always be unique due to customization-->
+<tr>
+	<td>click</td>
+	<td>css=div.reveal-modal-bg</td>
+	<td></td>
+</tr>
+<!--Update cart Qty for prod-->
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cart_item_quantity</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<!--Edit Customization-->
+<tr>
+	<td>click</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=customization_FirstName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_FirstName</td>
+	<td>Loaded</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_LastName</td>
+	<td>Testing</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;Thumb 100 bowlingalley fl wall&nbsp;&nbsp;28web 29&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img[alt=&quot;Thumb 100 bowlingalley fl wall&nbsp;&nbsp;28web 29&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=customization_quantity</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_quantity</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_to_cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Proceed to Shopping Cart</td>
+	<td>&lt;/td&gt;<br />&lt;tr&gt;<br />	&lt;td&gt;waitForElementPresent&lt;/td&gt;<br />	&lt;td&gt;css=img[alt=&quot;Thumb 100 10css=img[alt=&quot;Thumb 100 bluesedantailfin&nbsp;&nbsp;28web 29&quot;]&lt;/td&gt;<br />	&lt;td&gt;</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Review</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.reveal-modal-bg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#customization_preview &gt; a.close-reveal-modal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=cart_item_quantity</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.cart_item.even &gt; div.cart_item_details &gt; p</td>
+	<td>exact:Personalization: Load Test</td>
+</tr>
+<!--Go to Checkout-->
+<!--UPDATE 10 2016 fixed, clean commands located original (Summary Panel commands not included: could not find clean commands)-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.proceed_to_checkout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>qatukaiz+tkz@gmail.com</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>qatukaiz+tkz@gmail.com</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=form &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/checkouts/new</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=form &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=checkout_payment_type</td>
+	<td>Credit Card Invoice</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=checkout_payment_type</td>
+	<td>Credit Card Invoice</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__name_on_the_card</td>
+	<td>Cy Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__number</td>
+	<td>4111 1111 1111 1111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__month_and_year</td>
+	<td>09 / 17</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__cc_verification</td>
+	<td>254</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=billing_saved_address</td>
+	<td>qatukaiz test 213 W Institute Place Suite 309 Chicago IL 60610</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=checkout_billing_address_first_name</td>
+	<td>qatukaiz</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=checkout_billing_address_last_name</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=checkout_billing_address_line_1</td>
+	<td>213 W Institute Place</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=checkout_billing_address_line_2</td>
+	<td>Suite 309</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=checkout_billing_address_city</td>
+	<td>Chicago</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=checkout_billing_address_province</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//option[@value='IL'])[2]</td>
+	<td>Illinois</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=checkout_billing_address_postal_code</td>
+	<td>60610</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=checkout_billing_address_country</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=option[value=&quot;US&quot;]</td>
+	<td>United States</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_billing_address_email</td>
+	<td>qatukaiz+tkz@gmail.com</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//a[contains(text(),'Shipping Method Costs')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Shipping Method Costs')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitElementPresent</td>
+	<td>//div[@id='shipping']/fieldset/div[3]/div[2]/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='shipping']/fieldset/div[3]/div[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@id='checkout_quote_2']</td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_order_special_instructions</td>
+	<td>test stuff</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='terms_and_conditions']/div/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<!--*Cy removed order confirmation (in OrdConfir test)*-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Cancel</td>
+	<td></td>
+</tr>
+<!--Review Order History-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Order History</td>
+	<td></td>
+</tr>
+<!--(watch for order#)-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=li:nth-last-child(1) a.block-link</td>
+	<td></td>
+</tr>
+<!--Click order Back btn-->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.back_btn</td>
+	<td></td>
+</tr>
+<!--*Cy removed Contact List (in My Acct test)*-->
+<!--Add & Delete Products in bulk-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Notebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_FirstName</td>
+	<td>Delete</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_LastName</td>
+	<td>Prod</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_to_cart</td>
+	<td></td>
+</tr>
+<!--Add Another btn-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Another Notebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_FirstName</td>
+	<td>Delete2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_LastName</td>
+	<td>Prod2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_to_cart</td>
+	<td></td>
+</tr>
+<!--Go to Checkout btn-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Proceed to Checkout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=i.fa.fa-shopping-cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=li.select_toggles</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.fa.fa-square-o</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Remove Selected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#confirm_delete_selected &gt; a.button.close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Remove Selected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Yes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>link=Remove Selected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=li.select_toggles</td>
+	<td></td>
+</tr>
+<!--Checkbox deletion in Cart-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Notebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_FirstName</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_LastName</td>
+	<td>checkbox</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_quantity</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_to_cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Proceed to Shopping Cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.cart_select_check_box [type='checkbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.left-controls &gt; form.button_to &gt; input.button</td>
+	<td></td>
+</tr>
+<!--Logout-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<!--Manually verify order# in Admin Order History when tp=1220 resolved-->
+<!--Check Self-SignUp and main admin funx-->
+<!--Check order is stagehangs wip2-->
+<!--Place order with CC Types(master, amex)-->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Login / Register</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>mfkhan26+tukaiz@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>passwordtukaiz</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.form-group &gt; div.row &gt; div.col-sm-12 &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Wall Calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_FirstName</td>
+	<td>m</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_LastName</td>
+	<td>khan</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_quantity</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_to_cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Proceed to Shopping Cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Review</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.proceed_to_checkout</td>
+	<td></td>
+</tr>
+<!--MasterCard-->
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__name_on_the_card</td>
+	<td>m khan</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__number</td>
+	<td>3714 496353 98431</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=checkout_payments__number</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__month_and_year</td>
+	<td>09 / 18</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__cc_verification</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='terms_and_conditions']/div/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=billing_saved_address</td>
+	<td>label=tukiaz test 2917 Latoria Ln Franklin Park IL 60131</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_billing_address_email</td>
+	<td>m.khan@tukaiz.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Shipping Method Costs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Shipping Method Costs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.shipping_quote_inputs &gt; label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_order_special_instructions</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='terms_and_conditions']/div/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.ordered_items &gt; h2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=p.order-congratulations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Wall Calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_FirstName</td>
+	<td>m</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_LastName</td>
+	<td>khan</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_to_cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Proceed to Checkout</td>
+	<td></td>
+</tr>
+<!--American Express-->
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__name_on_the_card</td>
+	<td>m khan</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__number</td>
+	<td>5555 5555 5555 4444</td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>id=checkout_payments__number</td>
+	<td>5555 5555 5555 4444</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__month_and_year</td>
+	<td>09 / 18</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__cc_verification</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=billing_saved_address</td>
+	<td>label=tukiaz test 2917 Latoria Ln Franklin Park IL 60131</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_billing_address_email</td>
+	<td>m.khan@tukaiz.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Shipping Method Costs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Shipping Method Costs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.shipping_quote_inputs &gt; label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_order_special_instructions</td>
+	<td>test master</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='terms_and_conditions']/div/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=h3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.ordered_item_details &gt; h3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<!--PO Checkout-->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Login / Register</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>mfkhan26+tukaiz@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>passwordtukaiz</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.form-group &gt; div.row &gt; div.col-sm-12 &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Wall Calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_FirstName</td>
+	<td>m </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_LastName</td>
+	<td>khan</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_to_cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Proceed to Shopping Cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.proceed_to_checkout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=checkout_payment_type</td>
+	<td>label=Purchase Order</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_payments__po_number</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=billing_saved_address</td>
+	<td>label=tukiaz test 2917 Latoria Ln Franklin Park IL 60131</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_billing_address_email</td>
+	<td>m.khan@tukaiz.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Shipping Method Costs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Shipping Method Costs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.shipping_quote_inputs &gt; label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#shipping &gt; fieldset &gt; legend</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='terms_and_conditions']/div/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=h3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.ordered_item_details &gt; h3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<!--Invoice Checkout-->
+<tr>
+	<td>open</td>
+	<td>/sign-in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>mfkhan26+tukaiz@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>passwordtukaiz</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.form-group &gt; div.row &gt; div.col-sm-12 &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Wall Calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_FirstName</td>
+	<td>m</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_LastName</td>
+	<td>khan</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customization_quantity</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_to_cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Proceed to Shopping Cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cart_item_quantity</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.proceed_to_checkout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=checkout_payment_type</td>
+	<td>label=Invoice</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=billing_saved_address</td>
+	<td>label=tukiaz test 2917 Latoria Ln Franklin Park IL 60131</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=checkout_billing_address_email</td>
+	<td>m.khan@tukaiz.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Shipping Method Costs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Shipping Method Costs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.shipping_quote_inputs &gt; label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='terms_and_conditions']/div/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
