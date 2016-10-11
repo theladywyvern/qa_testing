@@ -50,11 +50,6 @@
 	<td>qatukaiz+tkz@gmail.com</td>
 </tr>
 <tr>
-	<td>selectWindow</td>
-	<td>null</td>
-	<td></td>
-</tr>
-<tr>
 	<td>clickAndWait</td>
 	<td>name=commit</td>
 	<td></td>
@@ -148,7 +143,7 @@
 	<td>link=Privacy Policy</td>
 	<td></td>
 </tr>
-<!--Bug, wll fail-->
+<!--UPDATE 10-2016, no longer fails (original comment - Bug, wll fail)-->
 <tr>
 	<td>clickAndWait</td>
 	<td>link=Terms and Conditions</td>
@@ -291,7 +286,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertValue</td>
+	<td>verifyValue</td>
 	<td>id=cart_item_quantity</td>
 	<td>2</td>
 </tr>
@@ -301,7 +296,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertElementPresent</td>
+	<td>verifyElementPresent</td>
 	<td>link=Select All</td>
 	<td></td>
 </tr>
@@ -346,8 +341,18 @@
 </tr>
 <!--Edit Customization-->
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=customization_FirstName</td>
 	<td></td>
 </tr>
 <tr>
