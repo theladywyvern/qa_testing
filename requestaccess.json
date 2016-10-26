@@ -1,0 +1,146 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://basic.pixalized.com/sign-in"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "accessRequest"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_first_name"
+      },
+      "text": "goos"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_last_name"
+      },
+      "text": "dog"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_username"
+      },
+      "text": "qatestingtukaiz+1goose@gmail.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_username_confirmation"
+      },
+      "text": "qatestingtukaiz+1goose@gmail.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_extra_attributes_address_line_1"
+      },
+      "text": "123 main"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_extra_attributes_city"
+      },
+      "text": "chicago"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='access_request_form_extra_attributes_country']//option[2]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='access_request_form_extra_attributes_province']//option[14]"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_extra_attributes_postal_code"
+      },
+      "text": "60639"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//form[@id='new_access_request_form']/div[12]/div/input"
+      }
+    },
+    {
+      "type": "get",
+      "url": "http://basic.pixalized.com/sign-in"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "username"
+      }
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "id",
+        "value": "username"
+      },
+      "text": "theladywyvern@gmail.com"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "password"
+      }
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "id",
+        "value": "password"
+      },
+      "text": "wyvern2016"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='loginbox']/div/div[2]/form/div/div[1]/div/input"
+      }
+    },
+    {
+      "type": "get",
+      "url": "http://basic.pixalized.com/admin"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
