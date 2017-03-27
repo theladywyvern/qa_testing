@@ -1,0 +1,261 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://arbyspopshop.pixalized.com/sign-in"
+    },
+    {
+      "type": "assertEval",
+      "negated": true,
+      "script": "var ribbonElement = document.getElementsByClassName('github-fork-ribbon-wrapper')[0]; ribbonElement.parentNode.removeChild(ribbonElement); return true",
+      "value": "true"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@class='navbar-right']//a[.='Request Access']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_first_name"
+      },
+      "text": "qa"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_last_name"
+      },
+      "text": "test"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_username"
+      },
+      "text": "qatestingtukaiz+z1@gmail.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_username_confirmation"
+      },
+      "text": "qatestingtukaiz+z1@gmail.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_extra_attributes_group_name"
+      },
+      "text": "qa testing"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_extra_attributes_address_line_1"
+      },
+      "text": "2440 n lorel ave"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_extra_attributes_city"
+      },
+      "text": "chicago"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='access_request_form_extra_attributes_country']//option[1]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='access_request_form_extra_attributes_country']//option[3]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='access_request_form_extra_attributes_province']//option[14]"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "access_request_form_extra_attributes_postal_code"
+      },
+      "text": "60639"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//form[@id='new_access_request_form']/input[3]"
+      }
+    },
+    {
+      "type": "get",
+      "url": "https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "Email"
+      },
+      "text": "qatestingtukaiz@gmail.com"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='next']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "Passwd"
+      },
+      "text": "wyvern2016"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='signIn']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "(//*[@email=\"arbys@tukaiz.com\" and @name=\"arbys\"])[1]"
+      }
+    },
+    {
+      "type": "get",
+      "url": "http://arbyspopshop.pixalized.com/sign-in"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "username"
+      },
+      "text": "qatestingtukaiz@gmail.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "password"
+      },
+      "text": "wyvern2016"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='login']/form/input[3]"
+      }
+    },
+    {
+      "type": "get",
+      "url": "http://arbyspopshop.pixalized.com/admin"
+    },
+    {
+      "type": "get",
+      "url": "http://arbyspopshop.pixalized.com/admin/access_requests"
+    },
+    {
+      "type": "get",
+      "url": "http://arbyspopshop.pixalized.com/admin/users/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[3]/div/div[2]/div[3]/div/ui-view/div[1]/h2/div/a/i"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "first_name"
+      },
+      "text": "Qa"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "last_name"
+      },
+      "text": "TEST"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "email"
+      },
+      "text": "qatestingtukaiz+10000@gmail.com"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='col-xs-5']/div[1]/div[2]/div[1]/label/input"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='col-xs-5']/div[1]/div[2]/div[2]/label/input"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@class='list-unstyled']/li[5]/div/label/input"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='col-md-12']//a[.=' Reset']"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}

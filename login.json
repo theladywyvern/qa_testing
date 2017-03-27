@@ -1,0 +1,46 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://arbyspopshop.pixalized.com/sign-in"
+    },
+    {
+      "type": "assertEval",
+      "negated": true,
+      "script": "var ribbonElement = document.getElementsByClassName('github-fork-ribbon-wrapper')[0]; ribbonElement.parentNode.removeChild(ribbonElement); return true",
+      "value": "true"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "username"
+      },
+      "text": "qatestingtukaiz@gmail.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "password"
+      },
+      "text": "wyvern2016"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='login']/form/input[3]"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
